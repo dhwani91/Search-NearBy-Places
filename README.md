@@ -27,3 +27,12 @@ Javascript
 Redux
 TDD chai and Mocha
 
+### Screenshots
+<div style='display: flex; width: 560px; flex-wrap: wrap; justify-content: space-between'>
+    <img style='height: 150px; width: 275px; margin-bottom: 10px' src='/dist/img/screens/1.png' />
+    <img style='height: 150px; width: 275px; margin-bottom: 10px' src='/dist/img/screens/2.png' />
+    <img style='height: 150px; width: 275px; margin-bottom: 10px' src='/dist/img/screens/3.png' />
+    <img style='height: 150px; width: 275px; margin-bottom: 10px' src='/dist/img/screens/4.png' />
+    <img style='height: 150px; width: 275px; margin-bottom: 10px' src='/dist/img/screens/5.png' />
+</div>
+
