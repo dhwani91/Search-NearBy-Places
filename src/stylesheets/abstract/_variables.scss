@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,600,700');
+$Roboto: Roboto, sans-serif;
+
+// Media Queries
+$small-break: 320px;
+$med-break: 576px;
+$large-break: 768px;
+$huge-break: 992px;
+
+// colors to be removed:  do not use!!!
+@import url('https://fonts.googleapis.com/css?family=Lato:200,300,400,500,900|Raleway|Muli|Roboto');
+
+$body-bg: #fff;
+$light-gray: #f8f8f8;
+$border-gray: #c4c4c4;
+$light-text: #a4a4a4;
+$title-clr:orangered;
+
+$dark-clr: #000;
+$semi-dark-clr: #999;
+$light-clr: #eee;
+$semi-light-clr: #ebebeb;
+$btn-bg:#ccc;
+
+$form-default-clr: #444;
+$btn-font-clr: #ecf0f1;
+$btn-transparent-clr: rgba(0,0,0,.0941176);
+$subTitle-clr: #8f8f8f;
+$link-clr: #337ab7;
+$text-clr: #ababab;
+
+// end colors to be removed
+
+$Vsmall-text-size: 12px;
+$small-text-size: 14px;
+$regular-text-size:16px;
+$med-text-size: 18px;
+$normal-text-size:24px;
+$footer-icon-size:30px;
+$subTitle-font-size: 36px;
+$title-font-size: 40px;
+
+$break-xsmall:320px;
+$break-small:480px;
+$break-med:768px;
+$break-large:1024px;
+$break-huge:1224px;
+
+//font variables
+$lato:'Lato';
+$roboto:'Roboto';
+$raleway:'Raleway';
+$open-sans:'Open sans',sans-serif;
+

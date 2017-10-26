@@ -1,0 +1,131 @@
+@mixin rotation($deg) {
+  transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -webkit-transform: rotate($deg);
+}
+@mixin set_transition($arg) {
+  transition: $arg;
+  -moz-transition: $arg;
+  -webkit-transition: $arg;
+}
+//translate
+@mixin set_translate($arg1,$arg2) {
+  -webkit-transform: translate($arg1,$arg2);
+  -moz-transform: translate($arg1,$arg2);
+  -ms-transform: translate($arg1,$arg2);
+  transform: translate($arg1,$arg2);
+}
+
+// translate vrtically
+@mixin set_transform ($arg) {
+  transform: translateY($arg);
+  -webkit-transform: translateY(-($arg));
+  -ms-transform: translateY(-($arg));
+  -moz-transform: translateY(-($arg));
+}
+//transform scale
+@mixin set_transform_scale($arg) {
+  transform: scale($arg);
+  -webkit-transform: scale(-($arg));
+  -ms-transform: scale(-($arg));
+  -moz-transform: scale(-($arg));
+}
+
+
+// box-shadow
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+@mixin placeholder() {
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
+}
+// For Round boreder
+@mixin rounded($radius) {
+  -webkit-border-radius:$radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// background and text color
+@mixin color_block($bg-color,$text-color){
+  background: $bg-color;
+  color:$text-color;
+}
+
+// media query for responsive design
+
+@mixin respond-to($media){
+  @if $media == handhelds {
+    @media only screen and (max-width:#{$break-small})
+    {@content;}
+  }
+  @else if $media == regular-screens {
+    @media only screen and (min-width:#{$break-small - 1px})and (max-width:#{$break-med - 1px})
+    {@content;}
+  }
+  @else if $media == medium-screens{
+    @media only screen and (min-width:#{$break-med})and (max-width:#{$break-large -1px})
+    {@content;}
+  }
+  @else if $media == wide-screens{
+    @media only screen and (min-width:$break-large)
+    {@content}
+  }
+}
+@mixin set_position($top,$right,$bottom,$left){
+  top:$top;
+  right:$right;
+  bottom:$bottom;
+  left:$left;
+}
+@function font-weight($keyword) {
+  $conversion-map: (
+          thin: 100,
+          ultralight: 200,
+          light: 300,
+          normal: 400,
+          regular: 400,
+          medium: 500,
+          semibold: 600,
+          bold: 700,
+          extrabold: 800,
+          black: 900
+  );
+
+  @if not map-has-key($conversion-map, $keyword) {
+    @error "Unsupported `font-weight` keyword `#{$keyword}`";
+
+    @return null;
+  }
+
+  @return map-get($conversion-map, $keyword);
+}
+
+@mixin font-weight($keyword) {
+  font-weight: font-weight($keyword);
+}
+@mixin adjust_size($width,$height){
+  height: $height;
+  width :$width;
+}
+

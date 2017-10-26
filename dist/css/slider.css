@@ -1,0 +1,72 @@
+.rsc-container {
+  width: 100%;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+.rsc-slider {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  transition: all 0.2s ease-in-out;
+}
+.rsc-slider-item {
+  width: 100%;
+  box-sizing: border-box;
+}
+.rsc-slider-item-img {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.rsc-slider-item-img img {
+  max-width: 100%;
+}
+
+.rsc-slider-item_transparent {
+  opacity: 0.3;
+}
+.rsc-navigation {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  cursor: pointer;
+  width: 50px;
+}
+.rsc-navigation_left {
+  left: 0;
+}
+.rsc-navigation_right {
+  right: 0;
+  text-align: right;
+}
+.rsc-arrow_left,
+.rsc-arrow_right {
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  background-image: url("data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDQ0IDQ0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0NCA0NCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CiAgPHBhdGggZD0ibTIyLDBjLTEyLjIsMC0yMiw5LjgtMjIsMjJzOS44LDIyIDIyLDIyIDIyLTkuOCAyMi0yMi05LjgtMjItMjItMjJ6bTEyLjcsMjIuN2wtOSw5Yy0wLjIsMC4yLTAuNCwwLjMtMC43LDAuM3MtMC41LTAuMS0wLjctMC4zbC0xLjQtMS40Yy0wLjQtMC40LTAuNC0xIDAtMS40bDQtNGMwLjMtMC4zIDAuMS0wLjktMC40LTAuOWgtMTYuNWMtMC42LDAtMS0wLjQtMS0xdi0yYzAtMC42IDAuNC0xIDEtMWgxNi42YzAuNCwwIDAuNy0wLjUgMC40LTAuOWwtNC00Yy0wLjQtMC40LTAuNC0xIDAtMS40bDEuNC0xLjRjMC4yLTAuMiAwLjQtMC4zIDAuNy0wLjNzMC41LDAuMSAwLjcsMC4zbDksOWMwLjIsMC4yIDAuMywwLjUgMC4zLDAuNy0wLjEsMC4zLTAuMiwwLjUtMC40LDAuN3oiIGZpbGw9IiNGRkZGRkYiLz4KPC9zdmc+Cg==");
+}
+.rsc-arrow_left {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+@media screen and (min-width: 1280px) {
+  .rsc-arrow_left,
+  .rsc-arrow_right {
+    background-size: 30px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .rsc-navigation {
+    width: 40px;
+  }
+  .rsc-arrow_left,
+  .rsc-arrow_right {
+    background-size: 30px;
+  }
+}

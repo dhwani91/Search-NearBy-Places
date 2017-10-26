@@ -1,0 +1,159 @@
+.places-container {
+  z-index: 3;
+  left: 15px;
+  /*overflow: hidden;*/
+  overflow-x: hidden;
+  border-radius: 2px;
+  box-shadow: 1px 1px 15px;
+  max-height: 90%;
+}
+
+.place-container {
+  display: flex;
+  background:$body-bg;
+  padding: 10px;
+  justify-content: space-between;
+  border-bottom: 1px solid $light-gray;
+}
+
+.place-container:hover {
+  background: #f0f0f0;
+  cursor: pointer;
+}
+
+.place-index-details-container {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  justify-content: space-around;
+}
+
+.place-item-image {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  @include rounded(5px)
+}
+
+.place-name {
+  font-size: 18px;
+  margin: 0px;
+  font-family: $roboto, sans-serif;
+}
+
+.place-details {
+  font-size: 13px;
+  margin: 0px;
+  color: $semi-dark-clr;
+}
+
+.back-arrow {
+  @extend .absolute;
+  top: 25px;
+  left: 25px;
+  color:$semi-dark-clr;
+  &:hover{
+    @extend .pointer;
+  }
+}
+
+.place-details-container {
+  background: white;
+  max-height: 77vh;
+  width: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.place-details-info {
+ul {
+  padding: 15px;
+  li {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: grey;
+    div {
+      width: 275px;
+    }
+  }
+}
+}
+
+
+
+
+.place-detail-title {
+  margin: 10px 36px;
+  font-family: $raleway, sans-serif;
+  font-size: $normal-text-size;
+  /* width: 285px; */
+  max-height: 130px;
+  text-align: center;
+  margin-right: 25px;
+  color: $title-clr
+}
+
+.detail-buttons {
+  background: none;
+  border: none;
+  font-size: 17px;
+  color: grey;
+  box-sizing: none;
+  width: 100%;
+}
+
+.detail-buttons:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.back-arrow:hover {
+  cursor: pointer;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+}
+
+.big-star {
+  width: 30px;
+  height: 30px;
+}
+
+.small-star {
+  width: 20px;
+  height: 20px;
+}
+
+.gmnoprint {
+  display: none;
+}
+
+.slide-image {
+  object-fit: cover;
+  height: 200px;
+  width: 360px;
+}
+
+.reviews {
+ disply: flex;
+  justify-content: space-around;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  @extend .text-center
+}
+
+
+.review-index {
+  overflow: auto;
+  background: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+

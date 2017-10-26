@@ -1,0 +1,197 @@
+/* basic helper classes
+//alignment */
+.vbottom {
+  vertical-align: bottom
+}
+.vmiddle {
+  vertical-align: middle
+}
+.vtop {
+  vertical-align: top
+}
+.text-center {
+  text-align: center
+}
+.text-left {
+  text-align: left
+}
+.text-justify {
+  text-align: justify
+}
+.text-right {
+  text-align: right
+}
+
+/* border-radius */
+.full-radius {
+  border-radius: 100%
+}
+
+/* cursor */
+.default {
+  cursor: default
+}
+.pointer {
+  cursor: pointer
+}
+
+/* font -weight */
+.bold {
+  font-weight: bold
+}
+.semi-bold {
+  font-weight: 500
+}
+.extra-bold {
+  font-weight: 700
+}
+
+
+/*full height */
+.full-height {
+  height: 100%
+}
+.full-width {
+  width: 100%
+}
+.full {
+  @extend .full-height;
+  @extend .full-width;
+}
+
+/* display */
+.block {
+  display: block
+}
+.table-row{
+  display: table-row;
+}
+.table-cell {
+  display: table-cell
+}
+.inline {
+  display: inline-block
+}
+.none {
+  display: none
+}
+.table {
+  display: table;
+  margin: 0;
+  &-middle {
+    @extend .full;
+  }
+  
+}
+  
+.cell {
+  @extend .vmiddle;
+  @extend .text-center
+}
+.table-fixed {
+  table-layout: fixed
+}
+
+/* float */
+.clear {
+  clear: both
+}
+.left {
+  float: left
+}
+.right {
+  float: right
+}
+
+/* img */
+.img-helper {
+  @extend .full-height;
+  @extend .inline;
+  @extend .vmiddle;
+}
+
+/* opacity */
+.opaque {
+  opacity: 0
+}
+
+/* overflow */
+.overflow-hidden {
+  overflow: hidden
+}
+.overflow-visible {
+  overflow: visible
+}
+.overflow-scroll {
+  overflow: scroll
+}
+
+/* position */
+.absolute {
+  position: absolute
+}
+.fixed {
+  position: fixed
+}
+.relative {
+  position: relative
+}
+
+/* spacing */
+.left-block {
+  margin-right: auto
+}
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+  // margin-right @margin-left
+}
+.margin-left10 {
+  margin-left: 10px
+}
+.margin-top10 {
+  margin-top: 10px
+}
+.margin-top20 {
+  margin-top: 20px
+}
+.padding-side-tb10 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  // padding-top: @padding-bottom
+}
+.padding-10{
+  padding:10px;
+}
+.padding-top10 {
+  padding-top: 10px
+}
+.padding-top20{
+  padding-top:20px;
+}
+.right-block {
+  margin-left: auto
+}
+
+
+//word-break
+.break-all {
+  word-break: break-all
+}
+
+/* background size */
+.bg-cover {
+  background-size: cover
+}
+.bg-contain {
+  background-size: contain
+}
+.noscroll {
+  overflow: hidden;
+}
+.visible{
+  visibility: visible;
+}
+.hidden{
+  visibility: hidden;
+}
