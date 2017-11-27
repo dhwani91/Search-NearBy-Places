@@ -1,4 +1,4 @@
-# Zenefits Coding Challenge
+# Search NearBy places
 This Responsive app utilizes the React With little Redux Structure and Use webpack to bundle JS modules,static assets.
 This
 
